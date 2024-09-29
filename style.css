@@ -1,0 +1,69 @@
+/* General */
+body{
+    height: 1400px;
+    background: radial-gradient(
+        circle,
+        #080008 30%,
+        #4a0053 40%,
+        #aa00c0 50%,
+        #ffd207 100%);
+}
+
+/* Container and box */
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    height: 100%
+}
+.box{
+    flex-grow: 0.4;
+
+    width: 50px;
+
+    box-shadow: 0px 30px 100px rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75) 5%, rgba(255, 255, 255, 0.1) 70%);
+}
+
+/* Text */
+.fancy-heading{
+    color:white;
+    text-shadow: 0px 3px 5px black;
+    text-align: center;
+}
+.light-text{
+    font-size: 2em;
+
+    padding-bottom: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1.8px 1px 1.5px rgb(255, 255, 255);
+}
+
+/* Button */
+.button{
+    background: none;
+
+    width: 150px;
+    height: 50px;
+
+    border-radius: 15px;
+    border-style: solid;
+
+    border-color: gray;
+    color: lightgray;
+}
+.button:hover{
+    border-color: white;
+    color: white;
+}
+.button:active{
+    border-color: gray;
+    color: gray;
+}
+
+/* Pseudo-elements */
+.fancy-heading::after{
+    content: '⚫';
+    margin-left: 10px;
+}
